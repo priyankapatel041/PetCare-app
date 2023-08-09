@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ec8478f83d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/lightbox.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./image_resources/LOGO.jpeg" />
+    <link rel="stylesheet" href="./css/doctors.css" />
+    <title>PETCARE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      .hero {
+        background: none !important;
+        height: 0px !important;
+        position: relative;
+        color: #090000;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-fixed-top d-flex align-items-center justify-content-between" id="navv">
+      <div class="container-fluid" id="nav">
+        <a class="navbar-brand" href="#"><img src="https://veteva.com/wp-content/uploads/2023/02/logo-1.png" alt=""
+            class="img"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="https://veteva.com/wp-content/uploads/2023/02/logo-1.png" alt="" class="img">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./doctors.html">Consult Vet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./medicine.html">Order Medicine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Healthcare Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/Login.html">Login/Signup</a>
+              </li>
+  
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- main -->
+    <main>
+      <div id="main">
+        <div id="filter">
+          <!-- filter -->
+          <div>
+            <p>Filter</p>
+            <p>Reset All</p>
+          </div>
+          <div>
+            <fieldset>
+              <legend>Pet Type</legend>
+              <input type="search" placeholder="Type Here" id="search" /> <br />
+
+              <div>
+                <input type="radio" id="cat" name="drone" value="cat" />
+                <label for="cat">Cat</label>
+              </div>
+
+              <div>
+                <input type="radio" id="dog" name="drone" value="Dog" />
+                <label for="dog">Dog</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="cow/buffalow"
+                  name="drone"
+                  value="cow/buffalow"
+                />
+                <label for="cow/buffalow">Cow/Buffalow</label>
+              </div>
+              <div>
+                <input type="radio" id="bird" name="drone" value="bird" />
+                <label for="bird">bird</label>
+              </div>
+
+              <div>
+                <input type="radio" id="turtle" name="drone" value="turtle" />
+                <label for="turtle">turtle</label>
+              </div>
+            </fieldset>
+            <!-- language -->
+            <fieldset>
+              <legend>language</legend>
+              <div>
+                <input type="radio" id="hindi" name="lang" value="hindi" />
+                <label for="hindi">hindi</label>
+              </div>
+
+              <div>
+                <input type="radio" id="English" name="lang" value="English" />
+                <label for="English">English</label>
+              </div>
+              <div>
+                <input type="radio" id="punjabi" name="lang" value="punjabi" />
+                <label for="punjabi">punjabi</label>
+              </div>
+              <div>
+                <input type="radio" id="odia" name="lang" value="odia" />
+                <label for="odia">odia</label>
+              </div>
+
+              <div>
+                <input type="radio" id="Bihari" name="lang" value="Bihari" />
+                <label for="Bihari">Bihari</label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div id="cards">
+          <!--Append card using js js -->
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+  
+        <img style="width: 40%;" src="https://veteva.com/wp-content/uploads/2023/02/logo-1.png" alt="">
+  
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          
+          <a href="#">Blog</a>
+        
+          <a href="#">Pricing</a>
+        
+          <a href="#">About</a>
+          
+          <a href="#">Faq</a>
+          
+          <a href="#">Contact</a>
+        </p>
+  
+        <p class="footer-company-name">Company Name © 2015</p>
+      </div>
+  
+      <div class="footer-center">
+  
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+        </div>
+  
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+  
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+  
+      </div>
+  
+      <div class="footer-right">
+  
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Searching for vets near you, a pet clinic near you or a veterinary hospital near you at odd hours ? Don't worry, we have got you covered. Download the veteva app now and do an online vet consultation within 10 minutes 24/7. Explore India's trusted veterinary doctors with average experience of 15+ years on our platform.
+        </p>
+  
+        <div class="footer-icons">
+  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+  
+        </div>
+  
+      </div>
+  
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>
+<!-- Adding javascript -->
+
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"
+></script>
+<script src="./js/lightbox.min.js"></script>
+<script>
+  //
+  function togglePopup() {
+    document.getElementById("popup-1").classList.toggle("active");
+  }
+  //
+  const navbar = document.getElementById("navbar");
+  let scrolled = false;
+
+  window.onscroll = function () {
+    if (window.pageYOffset > 100) {
+      navbar.classList.remove("top");
+
+      if (!scrolled) {
+        navbar.style.transform = "translateY(-90px)";
+      }
+      setTimeout(function () {
+        navbar.style.transform = "translateY(0)";
+        scrolled = true;
+      }, 200);
+    } else {
+      navbar.classList.add("top");
+      scrolled = false;
+    }
+  };
+
+  // smooth scrolling
+  $("#navbar a, .btn").on("click", function (e) {
+    if (this.hash != "") {
+      e.preventDefault();
+
+      const hash = this.hash;
+
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top - 120,
+        },
+        800
+      );
+    }
+  });
+
+  function appendi(el) {
+    let form = document.createElement("form");
+    let label = document.createElement("label");
+    label.setAttribute("for", "meeting-time");
+
+    let input = document.createElement("input");
+    input.setAttribute("type", "datetime-local");
+    input.setAttribute("id", "meeting-time");
+    input.setAttribute("name", "meeting-time");
+    input.setAttribute("value", "2023-06-12T19:30");
+    input.setAttribute("min", "2023-06-07T00:00");
+
+    let submit = document.createElement("input");
+    submit.setAttribute("type", "submit");
+    form.append(label, input, submit);
+    console.log(el.currentTarget.append(form));
+    let x = el.currentTarget.append(form);
+    return x;
+  }
+</script>
+
+<script>
+  let data = [
+    {
+      img: "./image_resources/team/person1.jpg",
+      name: "Faiyaz",
+      qualification: "M.v.sc.",
+      experience: "veterinarian [9 Years Experience]",
+      pets: "Avian Pets,Companion Pets,Exotic Pets,Farm Animals,Poultry",
+      language:  "hindi",
+      fees: 800,
+    },
+    {
+      img: "./image_resources/team/person1.jpg",
+      name: "Raju",
+      qualification: "M.v.sc.",
+      experience: "veterinarian [9 Years Experience]",
+      pets: "Avian Pets,Companion Pets,Exotic Pets,Farm Animals,Poultry",
+      language:"english", 
+      fees: 7800,
+    },
+    {
+      img: "./image_resources/team/person1.jpg",
+      name: "Aditya",
+      qualification: "M.v.sc.",
+      experience: "veterinarian [9 Years Experience]",
+      pets: "Avian Pets,Companion Pets,Exotic Pets,Farm Animals,Poultry",
+      language: "Bihari",
+      fees: 2000,
+    },
+    {
+      img: "./image_resources/team/person1.jpg",
+      name: "suraj",
+      qualification: "M.v.sc.",
+      experience: "veterinarian [9 Years Experience]",
+      pets: "Avian Pets,Companion Pets,Exotic Pets,Farm Animals,Poultry",
+      language: "Marathi",
+      fees: 500,
+    },
+    {
+      img: "./image_resources/team/person1.jpg",
+      name: "Anshita",
+      qualification: "M.B.B.S.",
+      experience: "veterinarian [9 Years Experience]",
+      pets: "Avian Pets,Companion Pets,Exotic Pets,Farm Animals,Poultry",
+      language:  "hindi",
+      fees: 3000,
+    },
+    {
+      img: "./image_resources/team/person1.jpg",
+      name: "Rajneesh",
+      qualification: "M.v.sc.",
+      experience: "veterinarian [9 Years Experience]",
+      pets: "Avian Pets,Companion Pets,Exotic Pets,Farm Animals,Poultry",
+      language: "english",
+      fees: 900,
+    },
+  ];
+
+  data.forEach((el) => {
+    UI(el);
+  });
+
+  function UI(el) {
+    let cards = document.querySelector("#cards");
+    let div = document.createElement("div");
+    div.setAttribute("class", "card");
+
+    let img_info = document.createElement("div");
+    img_info.setAttribute("class", "img-info");
+    let dctrimg = document.createElement("div");
+    dctrimg.setAttribute("class", "dctrimg");
+    let img = document.createElement("img");
+    img.setAttribute("src", el.img);
+    dctrimg.append(img);
+    img_info.append(dctrimg);
+
+    let dctrinfo = document.createElement("div");
+    dctrinfo.setAttribute("class", "dctrinfo");
+    let h4 = document.createElement("h4");
+    h4.innerHTML = el.name;
+    let span = document.createElement("span");
+    span.innerText = el.qualification;
+    h4.append(span);
+    let p1 = document.createElement("p");
+    p1.innerText = el.experience;
+
+    let p2 = document.createElement("p");
+    p2.innerText = el.pets;
+    const span1 = document.createElement("span");
+    span1.setAttribute("class", "lang");
+   span1.innerText = el.language;
+
+  
+     
+      
+  
+
+    let br = document.createElement("br");
+    let b = document.createElement("b");
+    b.innerText = `₹${el.fees} Consultation Fee`;
+    dctrinfo.append(h4, p1, p2, span1, br, b);
+    img_info.append(dctrimg, dctrinfo);
+
+    let vc_app = document.createElement("div");
+    vc_app.setAttribute("class", "vc-app");
+    let vc = document.createElement("div");
+    vc.setAttribute("class", "vc");
+    vc.innerHTML = `<i class="fa-solid fa-video"></i> Instant Consult`;
+    let Book = document.createElement("button");
+    Book.setAttribute("class", "BOOK");
+    Book.innerHTML = `<i class="fa-regular fa-calendar-days" style="color: #0066ff;"></i>Book Appointment`;
+    Book.addEventListener("click", () => {
+      localStorage.setItem("doctor", JSON.stringify(el));
+    window.location.href = "./Appointment.html";
+    });
+    vc_app.append(vc, Book);
+
+    div.append(img_info, vc_app);
+    cards.append(div);
+  }
+
+   // go home
+   let home=document.getElementById("home")
+  home.addEventListener("click",(e)=>{
+    e.preventDefault()
+   window.location.href='./index.html'
+  })
+</script>
