@@ -5,5 +5,4 @@ const DataBase = async () => {
     console.log("connected to DataBase");
 }
   
-  
   module.exports={DataBase}
